@@ -5,11 +5,13 @@ header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
+    font-size: 18px;
 }
 ul {
     display: flex;
     gap: 32px;
     list-style-type: circle;
+    
 }
 .logo-link {
     display: block;
@@ -36,14 +38,42 @@ address {
     flex-direction: column;
     color: white;
     font-size: 100px;
-    font-family: raleway;
     text-transform: uppercase;
+    letter-spacing: 30px;
+    padding: 165px 50px 106px;
     
 }
 .aligned-text_right {
     align-self: flex-end;
+    margin-right: -30px;
 }
 .aligned-text_center {
     align-self: center;
+    margin-right: -30px;
 }
+.cover__description {
+    display: flex;
+    padding: 0 50px 50px;
+    align-items: center;
 
+    
+    
+}
+.cover__description-text {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 18px;
+    flex-grow: 1;
+}
+.bet-button {
+    padding: 12px 32px 11px 31px;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 500;
+    
+}
