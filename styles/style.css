@@ -1,1 +1,49 @@
-/* место для вашего кода */
+header {
+    /*height: 293px*/
+    /*background-color: grey;*/
+    padding: 92px 50px 96px 50px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+ul {
+    display: flex;
+    gap: 32px;
+    list-style-type: circle;
+}
+.logo-link {
+    display: block;
+    width: 140px;
+    justify-content: center;
+}
+address {
+    justify-self: end;
+    max-width: 239.48px;
+}
+.general_link_menu {
+    list-style: none;
+}
+.pushed_link {
+    text-decoration: none;
+}
+.cover {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    position: relative;
+}
+.h1_fonts {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 100px;
+    font-family: raleway;
+    text-transform: uppercase;
+    
+}
+.aligned-text_right {
+    align-self: flex-end;
+}
+.aligned-text_center {
+    align-self: center;
+}
+
