@@ -82,15 +82,28 @@ address {
   text-transform: uppercase;
   font-weight: 700;
 }
-
+.lots {
+  padding: 180px 24px 120px 24px;
+}
+.lots__heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
 .lots__card-list {
+  display: flex;
+  list-style: none;
+  column-gap: 25px;
+  flex-wrap: wrap;
+}
+.lots__card-list-item {
   width: 334px;
   min-height: 596px;
   display: flex;
+  flex-direction: row;
   position: relative;
-  list-style: none;
-  gap: 24px;
-  padding-left: 24px;
 }
 .card {
   height: 100%;
@@ -98,6 +111,7 @@ address {
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
+  position: relative;
 }
 .card-link {
   text-decoration: none;
@@ -105,6 +119,14 @@ address {
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
 }
 .card__title {
@@ -120,5 +142,11 @@ address {
   font-weight: 400;
 }
 .foreground {
-    z-index: 999;
+  z-index: 999;
+}
+.lots__look-more-link {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 30px;
 }
