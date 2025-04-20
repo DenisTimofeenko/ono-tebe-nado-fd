@@ -12,9 +12,9 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="header__links-list">
           <li class="general_link_menu">
-            <a class="pushed_link" href="#0"> главная</a>
+            <a class="pushed_link" href="#0">главная</a>
           </li>
           <li><a href="#0">посмотреть лоты</a></li>
           <li><a href="#0">об аукционе</a></li>
@@ -34,34 +34,35 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="h1_fonts">
-          <span class="aligned-text">оно</span>
-          <span class="aligned-text_center">тебе</span>
-          <span class="aligned-text_right">надо</span>
+          <span class="aligned-text foreground">оно</span>
+          <span class="aligned-text_center foreground">тебе</span>
+          <span class="aligned-text_right foreground">надо</span>
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text">
+          <h2 class="cover__description-text foreground">
             аукцион вещей, в которые никто не верил
           </h2>
-          <button class="bet-button">сделать ставку</button>
+          <button class="bet-button foreground">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h3 class="lots__heading">лоты</h3>
         <ul class="lots__card-list">
-          <a class="card-link">
-            <article class="card card card_type_film">
-              <li class="lots__card-list-item">
-                <p class="card__title">
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#0">
+              <div class="overlay"></div>
+              <article class="card card_type_film">
+                <p class="card__title foreground">
                   фильм режиссёра, который бросил киношколу
                 </p>
-                <p class="card__text">
+                <p class="card__text foreground">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
-              </li>
-            </article>
-          </a>
+              </article>
+            </a>
+          </li>
         </ul>
       </section>
     </main>
