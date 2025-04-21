@@ -86,11 +86,11 @@ address {
   padding: 180px 24px 120px 24px;
 }
 .lots__heading {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 40px;
-    padding-bottom: 27px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
 }
 .lots__card-list {
   display: flex;
@@ -145,8 +145,97 @@ address {
   z-index: 999;
 }
 .lots__look-more-link {
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 40px;
-    padding-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: 240px auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 180px;
+  grid-template-areas:
+    "logo about"
+    " logo text"
+    " logo second";
+}
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  grid-area: about;
+  align-self: center;
+}
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  grid-area: text;
+  line-height: 24px;
+}
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+
+  grid-area: logo;
+}
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+.second {
+  grid-area: second;
+}
+.paragraf {
+  padding-bottom: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 84px;
+}
+
+.footer__menu-link_active{
+text-decoration: none;
+}
+.footer__adress {
+  justify-self: start;
+}
+.footer__menu {
+  justify-self: center;
+}
+.footer__menu-list {
+  list-style: none;
+}
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
+.footer__social-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+}
+.logo_youtoube {
+  background-image: url(../images/yt.svg);
+}
+.logo_vk {
+  background-image: url(../images/vk.svg);
+}
+.logo_pinterest {
+  background-image: url(../images/pinterest.svg);
 }
