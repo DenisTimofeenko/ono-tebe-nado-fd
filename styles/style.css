@@ -233,7 +233,6 @@
   display: flex;
   gap: 48px;
   justify-content: end;
-  text-align: center;
 }
 .footer__social-icon {
   display: flex;
