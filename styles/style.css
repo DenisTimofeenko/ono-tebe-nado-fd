@@ -1,32 +1,38 @@
-header {
-  /*height: 293px*/
-  /*background-color: grey;*/
-  padding: 92px 50px 96px 50px;
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   font-size: 18px;
+  font-weight: 400;
+  padding: 92px 50px 96px 50px;
 }
 .header__links-list {
   display: flex;
   gap: 32px;
   list-style-type: circle;
 }
-.logo-link {
+.header__link_active {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__logo {
   display: block;
   width: 140px;
   justify-content: center;
 }
-address {
+.address {
+  font-style: normal;
+  text-underline-offset: 4px;
+  line-height: 24.3px;
+  font-size: 18px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.header__address {
   justify-self: end;
-  max-width: 239.48px;
 }
-.general_link_menu {
-  list-style: none;
-}
-.pushed_link {
-  text-decoration: none;
-}
+
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -37,9 +43,14 @@ address {
   flex-direction: column;
   color: white;
   font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
   text-transform: uppercase;
   letter-spacing: 30px;
-  padding: 165px 50px 106px;
+  padding: 165px 50px 103px;
+}
+.aligned-text {
+  padding-bottom: 20px;
 }
 .aligned-text_right {
   align-self: flex-end;
@@ -48,10 +59,11 @@ address {
 .aligned-text_center {
   align-self: center;
   margin-right: -30px;
+  padding-bottom: 20px;
 }
 .cover__description {
   display: flex;
-  padding: 0 50px 50px;
+  padding: 0 50px 50px 50px;
   align-items: center;
 }
 .cover__description-text {
@@ -83,7 +95,7 @@ address {
   font-weight: 700;
 }
 .lots {
-  padding: 180px 24px 120px 24px;
+  padding: 180px 24px 0 24px;
 }
 .lots__heading {
   font-size: 40px;
@@ -140,39 +152,34 @@ address {
   color: white;
   font-size: 20px;
   font-weight: 400;
+  line-height: 120%;
 }
 .foreground {
   z-index: 999;
 }
 .lots__look-more-link {
+  display: block;
   font-size: 20px;
   font-weight: 400;
   padding-left: 40px;
   padding-top: 30px;
+  text-decoration: underline;
 }
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 240px auto;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 180px;
-  grid-template-areas:
-    "logo about"
-    " logo text"
-    " logo second";
+  padding: 120px 24px 180px 24px;
 }
 .about__title {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  grid-area: about;
-  align-self: center;
+  padding-top: 136px;
+  padding-bottom: 100px;
 }
 .about__text {
   font-size: 20px;
   font-weight: 400;
-  grid-area: text;
   line-height: 24px;
 }
 .about__logo {
@@ -184,15 +191,14 @@ address {
   align-items: center;
   justify-content: center;
   justify-self: center;
-
-  grid-area: logo;
+  margin-top: 35px;
 }
 .about__logo-image {
   width: 148px;
   height: 114px;
 }
-.second {
-  grid-area: second;
+.right {
+  padding-left: 24px;
 }
 .paragraf {
   padding-bottom: 24px;
@@ -207,14 +213,17 @@ address {
   margin-bottom: 84px;
 }
 
-.footer__menu-link_active{
-text-decoration: none;
+.footer__menu-link_active {
+  text-decoration: none;
 }
 .footer__adress {
   justify-self: start;
 }
 .footer__menu {
   justify-self: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 .footer__menu-list {
   list-style: none;
@@ -224,6 +233,9 @@ text-decoration: none;
   display: flex;
   gap: 48px;
   justify-content: end;
+}
+.footer__social-list {
+  text-align: center;
 }
 .footer__social-icon {
   display: flex;
