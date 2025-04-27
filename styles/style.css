@@ -11,9 +11,11 @@
   gap: 32px;
   list-style-type: circle;
 }
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
 .header__link_active {
   text-decoration: none;
-  list-style-type: none;
 }
 .header__logo {
   display: block;
@@ -38,7 +40,7 @@
   background-size: cover;
   position: relative;
 }
-.h1_fonts {
+.cover__title {
   display: flex;
   flex-direction: column;
   color: white;
@@ -108,6 +110,7 @@
   display: flex;
   list-style: none;
   column-gap: 25px;
+  row-gap: 25px;
   flex-wrap: wrap;
 }
 .lots__card-list-item {
@@ -238,13 +241,4 @@
   display: flex;
   width: 48px;
   height: 48px;
-}
-.logo_youtoube {
-  background-image: url(../images/yt.svg);
-}
-.logo_vk {
-  background-image: url(../images/vk.svg);
-}
-.logo_pinterest {
-  background-image: url(../images/pinterest.svg);
 }
